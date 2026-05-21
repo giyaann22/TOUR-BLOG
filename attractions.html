@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="attractions.css">
+    <head>
+        <title>Tourist Spots at Monte Maria Shrine</title>
+    </head>
+
+<body>
+
+ <div class="topbar">
+            <div class="brand">
+                <h1>MonteMaria</h1>
+                <h2>The Mother of All Asia</h2>
+            </div>
+
+            <nav class="menu">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="attractions.html">Attractions</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="travel.html">Travel Info</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+    <div class="attractions-container">
+        <div class="header">
+            <img src="images/90d2e5d1-5d34-4cc2-b3d0-747a21fffa4b.png" class="logo">
+            <h1>Tourist Spots at Monte Maria Shrine</h1>
+        </div>
+
+<!--1st place card-->
+    <div class="place-card">
+        <div class="left">
+            <img src="images/statue of mary.jpg" alt="Statue of Mary" class="statue">
+        </div>
+        <div class="right">
+            <h2>The Gigantic Statue of Mary</h2>
+            <p>The Statue of Mary at Monte Maria Shrine is one of the tallest religious statues in the world and serves as the main symbol of faith and devotion in the area. Inside the statue is a peaceful chapel where visitors can pray and reflect. The view deck offers is located at the 17th floor a breathtaking panoramic view of Batangas Bay, surrounding mountains, and nearby landscapes, making it both a spiritual and scenic destination.</p>
+        </div>
+    </div>
+
+<!--2nd place card-->
+    <div class="place-card">
+        <div class="left">
+            <img src="images/glass walk.jpg" alt="Glass Walk" class="glasswalk">
+        </div>
+       
+        <div class="right">
+            <h2>Glass Walk</h2>
+            <p>The Glass Walk at Monte Maria Shrine is a unique attraction that allows visitors to experience walking on a transparent glass floor. This thrilling feature provides an exhilarating view of the surroundings below, creating a sense of walking on air. It offers a different perspective of the shrine and its beautiful landscape, making it a must-visit spot for those seeking an adventurous and memorable experience.</p>
+    </div>
+    </div>
+
+
+<div class="place-card">
+    <div class=" left">
+        <img src="images/sto.nino chapel.jpg"alt="Sto.Nino Chapel"class="sto.nino">
+</div>
+
+<div class="right">
+    <h2>Sto.Nino Chapel</h2>
+    <p>The Sto. Niño Chapel is a small yet serene place of worship dedicated to the Child Jesus. Its peaceful atmosphere makes it ideal for prayer, meditation, and quiet reflection. Visitors often stop by the chapel to offer prayers and appreciate its calm and sacred environment within the shrine complex.</p>       
+ </div>
+</div>
+
+
+<div class="place-card">
+    <div class="left">
+        <img src="images/no.5.jpg"alt="No.5"class=no.5>
+        </div>
+    
+    <div class="right">
+            <h2>La Pieta</h2>
+            <p>Punta Santa Cruz, also known as La Pieta, features a moving religious sculpture portraying the Blessed Virgin Mary holding the body of Jesus after the crucifixion. The site symbolizes compassion, sacrifice, and maternal love. Surrounded by scenic coastal views, it provides visitors with a solemn and reflective spiritual experience.<p>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        const topbar = document.querySelector('.topbar');
+        let lastScrollY = window.pageYOffset;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.pageYOffset;
+            if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                topbar.classList.add('topbar-hidden');
+            } else {
+                topbar.classList.remove('topbar-hidden');
+            }
+            lastScrollY = currentScrollY;
+        });
+    </script>
+
+ </body>
+ </html>
+
+
+
+
+
+
+

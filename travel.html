@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Travel Information</title>
+    <link rel="stylesheet" href="travel.css">
+</head>
+<body>
+
+<div class="topbar">
+            <div class="brand">
+                <h1>MonteMaria</h1>
+                <h2>The Mother of All Asia</h2>
+            </div>
+
+            <nav class="menu">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="attractions.html">Attractions</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="travel.html">Travel Info</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+    <h1>TRAVEL INFORMATION</h1>
+
+    <div class="container">
+        <a href="https://www.waze.com/live-map/directions/montemaria-municipal-road-batangas-city?to=place.w.79298696.793249108.2930355">
+            <div class="box">
+                <img src="images/176313.jpg">
+                <p>Travel Location</p>
+            </div>
+                </a>
+
+        <a href="https://outoftownblog.com/montemaria-shrine-in-batangas/#google_vignette">
+            <div class="box">
+                <img src="images/montemaria_2024_12_12_21_59_15.jpg">
+                <p>Travel Guide</p>
+            </div>
+                </a>
+      
+        <a href="https://www.philippinebeaches.org/montemaria-shrine-guide-tips-batangas/">
+            <div class="box">
+                <img src="images/photo_2024-07-04_16-19-23.jpg">
+                <p>Travel Tips</p>
+            </div>
+                </a>
+
+ <script>
+        const topbar = document.querySelector('.topbar');
+        let lastScrollY = window.pageYOffset;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.pageYOffset;
+            if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                topbar.classList.add('topbar-hidden');
+            } else {
+                topbar.classList.remove('topbar-hidden');
+            }
+            lastScrollY = currentScrollY;
+        });
+    </script>
+
+</body>
+</html>

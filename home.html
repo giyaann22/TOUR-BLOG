@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonteMaria</title>
+
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <div class="hero-section">
+
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="images/montemaria.mp4" type="video/mp4">
+        </video>
+
+        <div class="topbar">
+            <div class="brand">
+                <h1>MonteMaria</h1>
+                <h2>The Mother of All Asia</h2>
+            </div>
+
+            <nav class="menu">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="attractions.html">Attractions</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="travel.html">Travel Info</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <div class="hero-copy">
+            <p class="hero-welcome">Welcome to MonteMaria</p>
+            <p class="hero-subtitle">The Mother of All Asia</p>
+        </div>
+
+    </div>
+
+    <div class="featured-section">
+
+        <h1>Featured Blogs and Reviews</h1>
+
+        <div class="home-container">
+
+            <a href="https://suroy.ph/montemaria-mother-of-all-asia-tower-of-peace/">
+                <div class="box">
+                    <img src="images/photo_2026-05-12_02-16-02.jpg">
+                    <p>Majestic Landmark</p>
+                </div>
+            </a>
+
+            <a href="https://balikbayanmagazine.com/travel/destinations/taking-it-easy-relaxing-things-to-do-in-montemaria/">
+                <div class="box">
+                    <img src="images/photo_2026-05-12_02-18-19.jpg">
+                    <p>Taking it Easy</p>
+                </div>
+            </a>
+
+            <a href="https://www.wanderwahm.com/2020/02/monte-maria-shrine-and-mt-salvation.html">
+                <div class="box">
+                    <img src="images/photo_2026-05-12_02-08-25.jpg">
+                    <p>Breath Taking</p>
+                </div>
+            </a>
+
+            <a href="https://wanderlog.com/place/details/8846452/mother-of-all-asia-tower-of-peace">
+                <div class="box">
+                    <img src="images/photo_2026-05-12_02-03-47.jpg">
+                    <p>Tower of Peace</p>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <script>
+        const topbar = document.querySelector('.topbar');
+        let lastScrollY = window.pageYOffset;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.pageYOffset;
+            if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                topbar.classList.add('topbar-hidden');
+            } else {
+                topbar.classList.remove('topbar-hidden');
+            }
+            lastScrollY = currentScrollY;
+        });
+    </script>
+</body>
+</html>

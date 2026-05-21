@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="contact.css" rel="stylesheet" type="text/css">
+    <title>Contact Information</title>
+  </head>
+  <body>
+
+        <div class="topbar">
+            <div class="brand">
+                <h1>MonteMaria</h1>
+                <h2>The Mother of All Asia</h2>
+            </div>
+
+            <nav class="menu">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="attractions.html">Attractions</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="travel.html">Travel Info</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+    <h1>Contact Information</h1>
+
+    <div class="contact-row">
+      <article class="contact-card">
+        <img class="card-logo" src="images/90d2e5d1-5d34-4cc2-b3d0-747a21fffa4b.png" alt="Website logo">
+        <h2>Official Website</h2>
+        <a href="https://www.montemaria.com.ph/">www.montemaria.com.ph</a>
+      </article>
+
+      <article class="contact-card">
+        <img class="card-logo" src="https://img.icons8.com/fluency/96/facebook-new.png" alt="Facebook logo">
+        <h2>Facebook</h2>
+        <a href="https://www.facebook.com/montemariabats/">facebook.com/montemariabats</a>
+      </article>
+
+      <article class="contact-card">
+        <img class="card-logo" src="https://img.icons8.com/fluency/96/new-post.png" alt="Email logo">
+        <h2>Email</h2>
+        <a href="mailto:inquire@montemaria.com.ph">inquire@montemaria.com.ph</a>
+      </article>
+
+      <article class="contact-card">
+        <img class="card-logo" src="https://img.icons8.com/fluency/96/phone.png" alt="Landline logo">
+        <h2>Landline</h2>
+        <p>+63 (43) 706 4667 / +63 (43) 702 3545</p>
+      </article>
+
+      <article class="contact-card">
+        <img class="card-logo" src="https://img.icons8.com/fluency/96/iphone.png" alt="Mobile phone logo">
+        <h2>Mobile Booking</h2>
+        <p>+63 905 494 4276 / +63 917 117 9793</p>
+      </article>
+    </div>
+
+    <script>
+        const topbar = document.querySelector('.topbar');
+        let lastScrollY = window.pageYOffset;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.pageYOffset;
+            if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                topbar.classList.add('topbar-hidden');
+            } else {
+                topbar.classList.remove('topbar-hidden');
+            }
+            lastScrollY = currentScrollY;
+        });
+    </script>
+
+  </body>
+</html>

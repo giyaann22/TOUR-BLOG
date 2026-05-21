@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte Maria</title>
+    <link rel="stylesheet" href="gallery.css">
+
+
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <!-- Background -->
+    <div class="background"></div>
+
+    
+ <div class="topbar">
+            <div class="brand">
+                <h1>MonteMaria</h1>
+                <h2>The Mother of All Asia</h2>
+            </div>
+
+            <nav class="menu">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="attractions.html">Attractions</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="travel.html">Travel Info</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+    <!-- Centered text -->
+    <div class="hero-text">
+        <h1>Explore MonteMaria</h1>
+        <p>Perched atop the scenic plateau of Batangas City, the MonteMaria Shrine is much more than a religious landmark, it is a destination where spiritual pilgrimage meets panoramic beauty. Home to the Mother of All Asia – Tower of Peace, 
+        the tallest statue of Mary in the world, the shrine offers a serene escape for both the faithful and the curious.</p>
+        <p>Whether you are looking for a quiet moment of reflection or a scenic spot of the coastline, here are the primary activities and landmarks you can enjoy.</p>
+        
+    </div>
+
+<!-- Image gallery -->
+    <div class="gallery">
+        <div class="image-card">
+            <img src="images/puntastacruzla-pieta__800x533.jpg" alt="Forest">
+    <div class="image-text">Punta de Santa Cruz</div>
+</div>
+        <div class="image-card">
+            <img src="images/photo_2026-05-11_23-55-16.jpg" alt="Church">
+        <div class="image-text">Sto. Nino Chapel</div>
+</div>
+        <div class="image-card">
+            <img src="images/photo_2026-05-13_15-04-59.jpg" alt="Forest">
+        <div class="image-text">St. John Paul II Chapel</div>
+</div>
+        <div class="image-card">
+            <img src="images/gate-of-archangels__800x533.jpg" alt="Church">
+        <div class="image-text">Gate of the Archangels</div>
+</div>
+        <div class="image-card">
+             <img src="images/photo_2026-05-11_21-42-39.jpg" alt="Church">
+        <div class="image-text">View Deck</div>
+</div>
+        <div class="image-card">
+            <img src="images/miracle-walk__2048x1365.jpg" alt="Church">
+        <div class="image-text">Miracle Glass Walk</div>
+</div>
+        <div class="image-card">
+            <img src="images/hq720.jpg" alt="Church">
+        <div class="image-text">Mirror Deck</div>
+</div>
+        <div class="image-card">
+             <img src="images/photo_2026-05-12_01-07-26.jpg" alt="Church">
+        <div class="image-text">9D Flying Cinema</div>
+</div>
+        <div class="image-card">
+                 <img src="images/photo_2026-05-12_01-07-32.jpg" alt="Church">
+        <div class="image-text">Dream Maze & VR Experience</div>
+</div>
+</div>
+
+<div class="section-divider" >
+    <h2>Know More</h2>
+    <p class="knowmore-text">
+        Beyond the spiritual majesty of the Tower of Peace, MonteMaria has introduced modern, immersive attractions designed to engage the senses and offer a different perspective on the shrine’s message of peace and reflection.
+    </p>
+</div>
+
+<div class="video-container">
+    <video autoplay muted loop>
+        <source src="images/IMG_0807.MOV" type="video/mp4">
+    </video>
+</div>
+
+<div class="bidyo2">
+    <video autoplay muted loop>
+     <source src="images/montemaria.mov" type="video/mp4">
+    </video>
+</div>
+
+<div class="bidyo3">
+    <video autoplay muted loop>
+     <source src="images/monte2.mov" type="video/mp4">
+    </video>
+</div>
+</div>
+  <script>
+        const topbar = document.querySelector('.topbar');
+        let lastScrollY = window.pageYOffset;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.pageYOffset;
+            if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                topbar.classList.add('topbar-hidden');
+            } else {
+                topbar.classList.remove('topbar-hidden');
+            }
+            lastScrollY = currentScrollY;
+        });
+    </script>
+</body>
+</html>
